@@ -4,10 +4,9 @@ crystal:
   - latest
   - nightly
 
-  install:
+install:
   - shards install
 
 script:
   - crystal spec
   - crystal bin/ameba.cr
-  
