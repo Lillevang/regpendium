@@ -1,0 +1,13 @@
+language: crystal
+
+crystal:
+  - latest
+  - nightly
+
+  install:
+  - shards install
+
+script:
+  - crystal spec
+  - crystal bin/ameba.cr
+  
