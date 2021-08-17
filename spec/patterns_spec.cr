@@ -3,7 +3,7 @@ require "./spec_helper"
 require "../src/*"
 
 describe Patterns do
-  it "Createss" do
+  it "Creates" do
     patterns = Patterns.new
     patterns.should_not be nil
   end
