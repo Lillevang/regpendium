@@ -1,7 +1,9 @@
 require "spec"
 require "../src/regpendium"
 
-def create_ip_v4_data
+module Regpendium
+
+  def create_ip_v4_data
     {
     "1.1.1.1" => true,
     "255.255.255.255"=> true,
@@ -21,5 +23,5 @@ def create_ip_v4_data
     "2222.22.22.22"=> false,
     "22.2222.22.2"=> false,
     }
-
+  end
 end
