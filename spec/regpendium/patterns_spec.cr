@@ -1,8 +1,7 @@
 require "../spec_helper"
 
 module Regpendium
-
-describe Patterns do
+  describe Patterns do
     it "Creates" do
       patterns = Patterns.new
       patterns.should_not be nil
