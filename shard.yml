@@ -2,8 +2,18 @@ name: regpendium
 version: 0.1.0
 
 authors:
-  - Lillevang jeppe.lillevang@gmail.com
+  - Jeppe Lillevang Salling <jeppe.lillevang@gmail.com>
 
+targets:
+  regpendium:
+    main: src/regpendium.cr
+
+scripts:
+    postinstall: make bin && make run_file
+
+executeables:
+  - regpendium
+  
 crystal: 1.1.1
 
 license: MIT
