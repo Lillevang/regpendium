@@ -4,7 +4,7 @@ module Regpendium
     def initialize
     end
 
-    def ipv4 : Regex
+    def ipv4() : Regex
       IPV4
     end
 
@@ -13,20 +13,15 @@ module Regpendium
       Regex.new(ZIP_CODE[country_code])
     end
 
-
-    # Returns a tuple with two patterns to match credit card numbers.
-    # This will accept patterns like:
-    # Index 0 will accept patterns like: XXXXXXXXXXXXXXXX, XXXX-XXXX XXXX-XXXX, XXXX XXXX-XXXX XXXX,
-    # Index 1 will accept patterns like: XXXXXXXXXXXX, XXXX XXXX XXXX XXXX, or XXXX-XXXX-XXXX-XXXX (stricter)
-    def credit_card() : Tuple(Regex, Regex)
-      {/\b(\d{4}[-\s]?){3}\d{4}\b/, /\b((\d{4}){3}|(\d{4}-){3}|(\d{4}\s){3})\d{4}\b/}
+    def credit_card() : Regex
+      /\b(?:(?<visa>4[0-9]{12}(?:[0-9]{3})?)|(?<mastercard>5[1-5][0-9]{14})|(?<discover>6(?:011|5[0-9]{2})[0-9]{12})|(?<amex>3[47][0-9]{13})|(?<diners>3(?:0[0-5]|[68][0-9])[0-9]{11})|(?<jcb>(?:2131|1800|35[0-9]{3})[0-9]{11}))\b/
     end
 
-    def email():
+    def email() : Regex
       /([A-Za-z0-9!#$%&'*+\/=?^_`{|.}~-]+@(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?)/
     end
 
-    def hex_value():
+    def hex_value() : Regex
       /\b#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})\b/
     end
   end
