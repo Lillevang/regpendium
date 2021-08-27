@@ -35,4 +35,13 @@ module Regpendium
       "jcb" => ["3558772629501113", "213153498047500", "3558158836042945", "3588957187743935", "3528925879176811"]
     }
   end
+
+  def get_test_emails
+    {
+      "valid" => ["not.uncommon.email@example.com", "usernam+tag+token@example.com", "other.domain@example.net", "working@example.dk"],
+      "invalid" => ["nope.example.com", "strange.punctuation@example..com"],
+      "case_sensitive" => ["Very@Common.COM"]
+    }
+  end
+
 end

@@ -1,7 +1,7 @@
 module Regpendium
 
     # Work in progress...
-    
+
     ZIP_CODE = {
     "AD": "\bAD[1-7]\d{2}\b",
     "AM": "(\b(37)\d{4}\b)|(\b[0-4]{1,1}\d{3}\b)",
@@ -150,5 +150,5 @@ module Regpendium
     "ZA": "\b\d{4}\b",
     "ZM": "\b\d{5}\b"
     }
-    
+
 end

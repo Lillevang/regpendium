@@ -26,6 +26,42 @@ TODO: Write usage instructions here
 
 TODO: Write development instructions here
 
+### Supported regular expressions
+
+**General purpose**
+
+- [ ] Zip code
+- [x] Email
+- [ ] Phone numbers
+- [ ] License plates
+- [ ] Time 24h format
+- [ ] ISO_8601 Datetime
+- [ ] ISBN
+- [ ] Roman numerals
+- [ ] UUID
+- [ ] Floating point number
+
+**Networking**
+- [x] Mac adresses
+- [x] Ipv4 
+- [ ] Ipv6
+
+**Crypto**
+- [ ] Hex values
+- [ ] Bitcoin address
+- [ ] Ethereum address
+- [ ] Ethereum hash
+- [ ] Pgp fingerprint
+
+
+**Credit card numbers** :heavy_check_mark:
+- [x] Visa
+- [x] Mastercard
+- [x] Discover
+- [x] JCB
+- [x] Diners
+- [x] Amex
+
 ## Contributing
 
 1. Fork it (<https://github.com/your-github-user/regpendium/fork>)
@@ -36,4 +72,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Lillevang](https://github.com/your-github-user) - creator and maintainer
+- [Lillevang](https://github.com/Lillevang) - creator and maintainer
