@@ -7,6 +7,6 @@ module Regpendium
   VERSION = "0.1.0"
 
   def ipv4
-    Patterns.new.ipv4()
+    Patterns.new.ipv4
   end
 end

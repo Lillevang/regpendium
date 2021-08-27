@@ -43,7 +43,7 @@ module Regpendium
         data.each do |number|
           match = patterns.credit_card.match(number)
           if !match.nil?
-            captures = match.named_captures()
+            captures = match.named_captures
             if !captures.nil?
               captures[name].should_not be_nil
             end
@@ -87,7 +87,7 @@ module Regpendium
 
     it "has a pattern for mac addresses" do
       patterns = Patterns.new
-      mac = patterns.mac_address()
+      mac = patterns.mac_address
       mac.should_not be_nil
       mac.matches?("00:08:C7:1B:8C:02").should be_true
     end

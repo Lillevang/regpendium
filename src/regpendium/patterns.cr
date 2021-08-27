@@ -1,6 +1,5 @@
 module Regpendium
   class Patterns
-
     def initialize
     end
 
